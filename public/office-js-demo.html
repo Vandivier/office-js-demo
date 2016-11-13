@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- More info: https://msdn.microsoft.com/en-us/library/office/fp142255.aspx#FirstAppTextEditor_HelloWorld -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" type="text/css" href="office-js-demo.css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="office-js-demo.js"></script>
+  </head>
+
+  <body>
+    <form id='form1'>
+      <input type='text' class='field1' name='docInjectData' placeholder='docInjectData'>
+      <input type='text' class='field2' name='coercionType' placeholder='coercionType'>
+      <input type='submit' value='Doc Inject'>
+    </form>
+    <br />
+    <form id='form2'>
+      <input type='text' class='field1' name='paneInjectData' placeholder='paneInjectData'>
+      <input type='text' class='field2' name='coercionType' placeholder='coercionType'>
+      <input type='submit' value='Pane Inject'>
+    </form>
+    <br />
+    <form id='form4'>
+      <input type='text' class='field1' name='theID' placeholder='id'>
+      <input type='submit' value='Create Text Binding'>
+    </form>
+    <br />
+    <form id='form6'>
+      <input type='text' class='field1' name='theID' placeholder='id'>
+      <input type='submit' value='Nav Track by ID'>
+    </form>
+    <br />
+    <form id='form7'>
+      <input type='text' class='field1' name='theID' placeholder='id'>
+      <input type='submit' value='Change Track by ID'>
+    </form>
+    <br />
+    <form id='form8'>
+      <input type='text' class='field1' placeholder='bindingID'>
+      <input type='text' class='field3' placeholder='alias'>
+      <input type='submit' value='Bind Content Control'>
+    </form>
+    <br />
+    <form id='form5'>
+      <input type='text' class='field1' name='theID' placeholder='id'>
+      <input type='text' class='field2' name='data' placeholder='New Data'>
+      <input type='text' class='field3' name='typ' placeholder='Data Type'>
+      <input type='submit' value='Update Bound Field'>
+    </form>
+    <br />
+    <button onclick="writeData(doge, 'matrix')"> Insert Doge Matrix </button>
+    <br />
+    <button id="greyify"> Toggle Greyify </button>
+    <br />
+    <button id="postTest"> AJAX Test </button>
+    <br />
+    <button onclick="readData('text')"> Log Selected Text </button>
+    <br />
+    <button onclick="readData('ooxml')"> Log Selected WOOXML </button>
+    <br />
+    <button onclick="logBindings()"> Log Bindings </button>
+    <br />
+    <br />
+    <input type='text' id='sendData' placeholder='VB Data or bindingID'>
+    <br />
+    <br />
+    <!--<button onclick="magicWord()"> Magic Word </button>
+    <br /> -->
+    <button id="goTo" onclick="goToByID()"> Go To By ID </button>
+    <br />
+    <button onclick="sendCommandToVB()"> Send Data to VB </button>
+    <br />
+    <button onclick="addCustomXML()"> Add Custom XML Part </button>
+    <br />
+    <button onclick="fileName1()"> Log File Name Method 1 </button>
+    <br />
+    <button onclick="fileName2()"> Log File Name Method 2 </button>
+    <br />
+    <br /> Results:
+    <br />
+    <br />
+    <div id='results'></div>
+    <br />
+    <br />
+  </body>
+</html>

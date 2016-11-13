@@ -1,0 +1,36 @@
+body {
+	background-color: rgba(3,3,3,0);
+}
+
+h1,h3,h4,p,a,li {
+    font-family: "Segoe UI Light","Segoe UI",Tahoma,sans-serif;
+    text-decoration-color:#4ec724;
+}
+
+button {
+    background-color: LightBlue;
+}
+
+.greyify {
+	background-color: rgba(3,3,3,.1);
+}
+
+select {
+	min-width: 180px;
+}
+
+* {
+	font-size: 16px;
+	line-height: 20px;
+	font-family: tahoma, sans-serif !important;
+}
+
+#chosen-result , #chosen-result-proto{
+	border: 1px solid grey;
+	padding: 5px;
+}
+
+#chosen-result , #chosen-result-proto a{
+	color: blue;
+	text-decoration:underline;
+}
